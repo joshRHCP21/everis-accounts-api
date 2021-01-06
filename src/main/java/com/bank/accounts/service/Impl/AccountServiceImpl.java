@@ -16,9 +16,9 @@ public class AccountServiceImpl implements AccountService
     @Override
     public Single<AccountResponse> getAccountByCardNumber(String cardNumber)
     {
-        AccountResponse accountResponse1 = new AccountResponse("1111222233334441", 100.0);
+        AccountResponse accountResponse1 = new AccountResponse("1111222233334441", 1000.0);
         AccountResponse accountResponse2 = new AccountResponse("1111222233334442", 500.0);
-        AccountResponse accountResponse3 = new AccountResponse("1111222233334443", 500.0);
+        AccountResponse accountResponse3 = new AccountResponse("1111222233334443", 1500.0);
 
         List<AccountResponse> accountResponses = Arrays.asList(accountResponse1, accountResponse2, accountResponse3);
 

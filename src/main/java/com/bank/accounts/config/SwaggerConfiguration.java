@@ -32,7 +32,8 @@ public class SwaggerConfiguration
         return new UiConfiguration(null);
     }
 
-    private ApiInfo apiInfo() {
+    private ApiInfo apiInfo()
+    {
         return new ApiInfoBuilder()
                 .title("Bank Account API")
                 .description("Api for Bank Accounts")

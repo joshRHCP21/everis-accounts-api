@@ -26,9 +26,9 @@ public class AccountController
     private final AccountService accountService;
 
     @GetMapping
-    @ApiOperation(value = "Find accounts by Card Number", notes = "Retrieving the collection of accounts", response = Single.class)
+    @ApiOperation(value = "Find accounts by Card Number", notes = "Retrieving the collection of accounts", response = AccountResponse.class)
     @ApiResponses({
-            @ApiResponse(code = 200, message = "Success", response = Single.class)
+            @ApiResponse(code = 200, message = "Success", response = AccountResponse.class)
     })
     public Single<AccountResponse> getAccounResponseByCardNumber(@RequestParam(name = "cardNumber") String cardNumber)
     {

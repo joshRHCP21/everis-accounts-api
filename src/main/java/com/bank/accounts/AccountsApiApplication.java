@@ -9,8 +9,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 @Import(SwaggerConfiguration.class)
-public class AccountsApiApplication implements WebMvcConfigurer{
-
+public class AccountsApiApplication implements WebMvcConfigurer
+{
 	public static void main(String[] args) {
 		SpringApplication.run(AccountsApiApplication.class, args);
 	}
@@ -18,7 +18,6 @@ public class AccountsApiApplication implements WebMvcConfigurer{
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry)
 	{
-
 		registry.addResourceHandler("swagger-ui.html")
 				.addResourceLocations("classpath:/META-INF/resources/");
 
